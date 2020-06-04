@@ -1,0 +1,19 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}}</h2>
+  <div>
+    <span>id: </span>{{hero.id}}
+  </div>
+  <div>
+    <span>ulti: </span>{{hero.ulti}}
+  </div>
+  <div>
+    <label>
+      Name: 
+    </label><input [(ngModel)]="hero.name" placeholder="name" />
+    <label>
+      Ulti: 
+    </label><input [(ngModel)]="hero.ulti" placeholder="ulti" />
+  </div>
+</div>
+<button (click)="goBack()">back</button>
+<button (click)="goSave()">save</button>
